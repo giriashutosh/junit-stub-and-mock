@@ -1,0 +1,105 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > DataService</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.ashutosh.mockito.mockitodemo.bussiness</a>
+</div>
+
+<h1>Coverage Summary for Class: DataService (com.ashutosh.mockito.mockitodemo.bussiness)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">DataService$MockitoMock$OOZa9zK7</td>
+  </tr>
+  <tr>
+    <td class="name">DataService$MockitoMock$OOZa9zK7$auxiliary$RYis8mSW</td>
+  </tr>
+  <tr>
+    <td class="name">DataService$MockitoMock$OOZa9zK7$auxiliary$sowR1Zja</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.ashutosh.mockito.mockitodemo.bussiness;
+&nbsp;
+&nbsp;public class SimpleBusinessImpl {
+&nbsp;    private DataService dataService;
+&nbsp;
+&nbsp;    public SimpleBusinessImpl(DataService dataService) {
+&nbsp;        super();
+&nbsp;        this.dataService = dataService;
+&nbsp;    }
+&nbsp;
+&nbsp;    public int findTheGreatestFromAllData() {
+&nbsp;        int[] data = dataService.retrieveAllData();
+&nbsp;        int greatest = Integer.MIN_VALUE;
+&nbsp;
+&nbsp;        for (int value : data) {
+&nbsp;            if (value &gt; greatest) {
+&nbsp;                greatest = value;
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        return greatest;
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;interface DataService{
+&nbsp;    int[] retrieveAllData();
+&nbsp;}
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-01-27 15:52</div>
+</div>
+</body>
+</html>
